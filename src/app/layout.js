@@ -1,7 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
 
-
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -30,6 +29,10 @@ export default function RootLayout({ children }) {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
+        <meta
+          name="google-site-verification"
+          content="f85BEYfO6CYzN9fsSxGbv3MGlc6n5xugvRR6gUB9zls"
+        />
         <meta
           name="keywords"
           content="quotes, api, backend, database, author, topic, quotesdb , free api , free quotes api,rest api , fake api"
