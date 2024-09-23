@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 export default function IntroPage() {
     const [quote, setQuote] = React.useState({})
     useEffect(() => {
-        fetch("http://quotes-db.vercel.app/api/random").then(res => res.json()).then(data => setQuote(data)).catch(err => console.log(err))
+        fetch("https://quotes-db.vercel.app/api/random").then(res => res.json()).then(data => setQuote(data)).catch(err => console.log(err))
 
     }, [])
 
