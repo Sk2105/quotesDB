@@ -1,0 +1,31 @@
+{
+    "plugins": [
+        {
+            "type": "add",
+            "pluginName": "fleet.javascript"
+        },
+        {
+            "type": "add",
+            "pluginName": "fleet.tailwindcss"
+        },
+        {
+            "type": "add",
+            "pluginName": "fleet.ai"
+        },
+        {
+            "type": "add",
+            "pluginName": "fleet.aiCompletion"
+        },
+        {
+            "type": "add",
+            "pluginName": "fleet.css"
+        },
+        {
+            "type": "add",
+            "pluginName": "fleet.json"
+        }
+    ],
+    "editor.formatOnSave": true,
+    "prettier.mode": "Enabled",
+    "java.debugger.reloadClassesAfterCompilation": "Always"
+}

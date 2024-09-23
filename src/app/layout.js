@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -20,6 +21,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>QuotesDB</title>
+        <meta
+          name="description"
+          content="QuotesDB - A powerful backend API that gives users access to a large database of quotes from different authors and topics."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="keywords"
+          content="quotes, api, backend, database, author, topic, quotesdb , free api , free quotes api,rest api , fake api"
+        />
+        <meta name="author" content="Sachin Kumar" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
