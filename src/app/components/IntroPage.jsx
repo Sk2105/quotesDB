@@ -8,8 +8,6 @@ export default function IntroPage() {
     useEffect(() => {
         fetch("https://quotes-db.vercel.app/api/random").then(res => res.json()).then(data => setQuote(data)).catch(err => console.log(err))
     }, [])
-
-
     return (
         <div className='w-full h-fit  xl:h-screen ps-4 pe-4 md:ps-8 md:pe-8'>
 

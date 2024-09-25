@@ -25,8 +25,6 @@ export default function Routers() {
 
 function RouteCard({ route }) {
 
-    console.log(route);
-
     return (
         <div className={`w-full h-fit grid  grid-cols-2 place-items-center border border-black `}>
             <h1 className='text-[18px] xl:text-[20px] md:text-xl xl:text-xl text-center p-2 w-full h-full font-semibold text-black border-r-2 border-black'>
@@ -35,7 +33,7 @@ function RouteCard({ route }) {
 
             <div className="w-full flex justify-start items-start flex-col overflow-x-scroll md:overflow-hidden">
                 <h1 className='text-[16px] cursor-pointer w-full p-2 text-center '>
-                    Click here - <Link className='text-blue-600' href={route.link}>{`https://quotes-db.vercel.app/api/${route.route}`}</Link>
+                    Click here - <Link className='text-blue-600' href={route.link}>{`https://quotes-db.vercel.app${route.route}`}</Link>
                 </h1>
                 {
                     route.query && route.query.map(q => {

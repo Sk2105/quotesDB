@@ -24,7 +24,6 @@ export async function GET(request, { params }) {
     };
 
     const data = await quote();
-
     return NextResponse.json(data[0]);
   } catch (error) {
     return NextResponse.json({ error: error.message });

@@ -10,7 +10,7 @@ export async function GET() {
     const result = data[random];
     result.author = result.author === null ? "Anonymous" : result.author;
     result.category = result.category === null ? "General" : result.category;
-    return NextResponse.json(data[random]);
+    return NextResponse.json(result);
   } catch (error) {
     return NextResponse.json({ error: error.message });
   }
